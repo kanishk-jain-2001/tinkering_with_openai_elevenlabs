@@ -7,7 +7,7 @@ import numpy as np
 folder = "frames"
 
 # Initialize the webcam
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 # Check if the webcam is opened correctly
 if not cap.isOpened():
@@ -39,7 +39,7 @@ while True:
         print("Failed to capture image")
 
     # Wait for 2 seconds
-    time.sleep(2)
+    time.sleep(30)
 
 # Release the camera and close all windows
 cap.release()
